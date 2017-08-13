@@ -2,6 +2,7 @@
   "name": "design-system-playground",
   "version": "0.0.1-alpha.1",
   "description": "Experiment with design systems by updating stateful theme data which controls typography and colors.",
+  "main": "src/index.js",
   "dependencies": {
     "chroma-js": "^1.3.4",
     "json-cycle": "^1.2.0",
@@ -34,5 +35,6 @@
     "presentational",
     "components"
   ],
+  "author":"John Polacek",
   "license": "MIT"
 }
