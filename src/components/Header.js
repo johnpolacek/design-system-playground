@@ -7,9 +7,7 @@ class Header extends React.Component {
 		return (
 		  	<Flex wrap style={{backgroundColor:this.props.theme.colors.base,fontFamily:this.props.theme.fontFamilies[Object.keys(this.props.theme.fontFamilies)[0]]}} px={4} py={3}>
 		  		<Flex justify={['center','center','flex-start']} w={[1,1,2/5]}>
-		  			<object style={{marginLeft:'-4px',marginTop:'-8px'}} width="48" height="48" type="image/svg+xml" data="./images/React-icon.svg">
-						Your browser does not support SVG
-					</object>
+		  			<img style={{marginLeft:'-4px',marginTop:'-8px'}} width="48" height="48" type="image/svg+xml" src="./images/React-icon.svg" />
 		  			<Text f={3} py={1} color='white'>Design System Playground</Text>
 		  		</Flex>
 		  		<Flex wrap justify={['center','center','flex-end']} w={[1,1,3/5]} pt={[2,2,1]} pb={1}>
