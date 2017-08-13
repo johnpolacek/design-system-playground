@@ -23,5 +23,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "keywords": [
+    "design system",
+    "css",
+    "theming",
+    "react",
+    "ui",
+    "styled-components",
+    "presentational",
+    "components"
+  ],
+  "license": "MIT"
 }
