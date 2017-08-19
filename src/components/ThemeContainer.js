@@ -45,7 +45,7 @@ class ThemeContainer extends React.Component {
 									{(this.state.editMode ? 'finish' : 'edit')}
 								</Button>
 								{!this.state.editMode &&
-									<Button download='theme.json' style={{opacity:.75}} href={('data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.props.theme)))} is='a' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()}>
+									<Button download='theme.json' style={{opacity:.75}} href={('data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.props.theme,null,2)))} is='a' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()}>
 										download
 									</Button>
 								}
