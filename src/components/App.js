@@ -391,7 +391,7 @@ class App extends React.Component {
 				{
 		    		this.state.webfonts && Object.keys(this.state.webfonts).map((fontName) => {
 						return (
-							<link key={this.state.webfonts[fontName]} rel='stylesheet' href={"https://fonts.googleapis.com/css?family="+this.state.webfonts[fontName]} />
+							<link key={this.state.webfonts[fontName]} rel='stylesheet' href={"https://fonts.googleapis.com/css?family="+this.state.webfonts[fontName]+":100,200,300,400,500,600,700,800,900"} />
 						)
 					})
 				}
