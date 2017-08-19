@@ -1,6 +1,6 @@
 {
   "name": "design-system-playground",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "Experiment with design systems by updating stateful theme data which controls typography and colors.",
   "homepage": "https://johnpolacek.github.io/design-system-playground/",
   "main": "src/index.js",
