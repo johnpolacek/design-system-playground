@@ -286,7 +286,7 @@ class App extends React.Component {
 				<div style={{fontFamily:this.state.fontFamilies[Object.keys(this.state.fontFamilies)[0]]}}>
 					<Flex wrap>
 						<Box className="container-theme" p={[3,4]}>
-							<ThemeContainer themes={this.themes} selectTheme={this.selectTheme} editThemeName={this.editThemeName} selectFontFamily={this.selectFontFamily} addFont={this.addFont} deleteFont={this.deleteFont} editFont={this.editFont} editTypeScale={this.editTypeScale} deleteTypeScale={this.deleteTypeScale} addTypeScale={this.addTypeScale} updateBaseColor={this.updateBaseColor} updateColorValue={this.updateColorValue} renameColor={this.renameColor} addColor={this.addColor} deleteColor={this.deleteColor} theme={this.state} />
+							<ThemeContainer themes={this.themes} selectTheme={this.selectTheme} editThemeName={this.editThemeName} selectFontFamily={this.selectFontFamily} addFont={this.addFont} deleteFont={this.deleteFont} editFont={this.editFont} editTypeScale={this.editTypeScale} deleteTypeScale={this.deleteTypeScale} addTypeScale={this.addTypeScale} updateBaseColor={this.updateBaseColor} updateColorValue={this.updateColorValue} renameColor={this.renameColor} addColor={this.addColor} deleteColor={this.deleteColor} getRandomColor={this.getRandomColor} theme={this.state} />
 							<Box p={4} mt={4}>
 							<Text p={4} m={4} right>
 								<Text is='span' mx={3}>Made by <Link color={this.state.colors.base} href="https://github.com/johnpolacek" children="John Polacek" /></Text>

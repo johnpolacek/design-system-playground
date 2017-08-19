@@ -26,7 +26,9 @@ class ThemeContainer extends React.Component {
 		return (<option key={theme} value={this.props.themes[theme] && theme}>{theme}</option>)
 	}
 
+	
 	render() {
+		console.dir(this.props.theme);
 		return (
 	  		<Box key='ThemeContainer'>
 	  			<Border bottom mb={4}>
@@ -39,8 +41,11 @@ class ThemeContainer extends React.Component {
 										this.props.theme.themeName 
 								}
 								
-								<Button style={{opacity:.75}} href='#' is='a' py={1} px={2} f={0} ml={3} bg={this.props.theme.colors.base || 'deepskyblue'} onClick={(e) => this.onEdit(e)}>
+								<Button style={{opacity:.75}} is='a' href='#' py={1} px={2} f={0} ml={3} bg={this.props.theme.colors.base || 'deepskyblue'} onClick={(e) => this.onEdit(e)}>
 									{(this.state.editMode ? 'finish' : 'edit')}
+								</Button>
+								<Button download='theme.json' style={{opacity:.75}} href={('data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.props.theme)))} is='a' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()}>
+									download
 								</Button>
 							</Heading>
 						</Box>
@@ -75,6 +80,7 @@ class ThemeContainer extends React.Component {
 	    themes: PropTypes.object.isRequired,
 	    selectTheme: PropTypes.func.isRequired,
 	    editThemeName: PropTypes.func.isRequired,
+	    getRandomColor: PropTypes.func.isRequired,
 	};
 }
 
