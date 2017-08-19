@@ -33,7 +33,7 @@ class ThemeContainer extends React.Component {
 	  		<Box key='ThemeContainer'>
 	  			<Border bottom mb={4}>
 	  				<Flex wrap>
-			    		<Box w={1/2}>
+			    		<Box w={this.state.editMode ? 1/2 : 1}>
 							<Heading pb={3}>
 								{this.state.editMode ? 
 										<Input onBlur={this.props.editThemeName} autoFocus w={'300px'} style={{display:'inline-block'}} defaultValue={this.props.theme.themeName} />
@@ -44,9 +44,16 @@ class ThemeContainer extends React.Component {
 								<Button style={{opacity:.75}} is='a' href='#' py={1} px={2} f={0} ml={3} bg={this.props.theme.colors.base || 'deepskyblue'} onClick={(e) => this.onEdit(e)}>
 									{(this.state.editMode ? 'finish' : 'edit')}
 								</Button>
-								<Button download='theme.json' style={{opacity:.75}} href={('data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.props.theme)))} is='a' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()}>
-									download
-								</Button>
+								{!this.state.editMode &&
+									<Button download='theme.json' style={{opacity:.75}} href={('data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(this.props.theme)))} is='a' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()}>
+										download
+									</Button>
+								}
+								{!this.state.editMode &&
+									<Button is='a' href='#' py={1} px={2} f={0} ml={3} bg={this.props.getRandomColor()} onClick={this.props.resetTheme}>
+										reset
+									</Button>
+								}
 							</Heading>
 						</Box>
 						{this.state.editMode && 
@@ -81,6 +88,7 @@ class ThemeContainer extends React.Component {
 	    selectTheme: PropTypes.func.isRequired,
 	    editThemeName: PropTypes.func.isRequired,
 	    getRandomColor: PropTypes.func.isRequired,
+	    resetTheme: PropTypes.func.isRequired,
 	};
 }
 

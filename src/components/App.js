@@ -50,6 +50,10 @@ class App extends React.Component {
 		}
 	}
 
+	resetTheme() {
+		this.setState(Object.assign(themes['Slate'],this.getColorState(themes['Slate'].colors),{themeName:'My Theme Name'}));
+	}
+
 	editFont(fontName, fontValue, webfontId) {
 		let newFontFamilies = Object.assign({}, this.state.fontFamilies);
 		newFontFamilies[fontName] = fontValue;
