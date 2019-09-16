@@ -1,15 +1,20 @@
 # Design System Playground
 
-#### Build and experiment with front end design systems by setting layout, typography and color controls
+#### Build and experiment with front end design systems by setting layout, typography and color props
 
 --
 
 The basic idea:
 
-1. Take a JSON theme file with design settings
-2. Smash that into some components
-3. Use React to change the theme state and update the components
+1. Adjust the design system props
+2. Generate a theme object that follows the [System UI Theme Specification](https://system-ui.com/theme/)
 
---
+###Work-In-Progress
 
-A fun experiment built with [Rebass](http://jxnblk.com/rebass/) and [Styled Components](https://www.styled-components.com/).
+- Refactor to Theme UI
+- Use [@theme-ui/color](https://theme-ui.com/color) for shades 
+- Generate System UI Theme Object
+- Add GraphQL DB to save styles
+- Add Cypress testing
+- Deploy to Now
+
