@@ -16,7 +16,7 @@ export default props => {
     NavContext
   )
 
-  const [myThemes] = React.useState(localStorage.getItem("themes") || null)
+  const [myThemes] = React.useState(typeof window !== 'undefined' && window.localStorage.getItem("themes") || null)
 
   const onStepsComplete = () => {
     setPlaygroundHeight(0)
