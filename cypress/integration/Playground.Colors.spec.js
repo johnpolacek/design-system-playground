@@ -2,7 +2,7 @@ describe("Playground", function() {
   beforeEach(function() {
     cy.visit("/")
     cy.get("header").should("have.css", "background-color", "rgb(65, 105, 225)")
-    cy.wait(10000)
+    cy.wait(20000)
     cy.contains("What body font do you like?").should("be.visible")
     cy.contains("Next").click()
     cy.wait(2000)
@@ -13,8 +13,10 @@ describe("Playground", function() {
   })
 
   it("can set color scheme from preset, image, preset or go random", function() {
-
-    const defaultPrimaryColor = Cypress.browser.name === 'electron' ? 'rgb(222, 162, 94)' : 'rgb(222, 162, 95)'
+    const defaultPrimaryColor =
+      Cypress.browser.name === "electron"
+        ? "rgb(222, 162, 94)"
+        : "rgb(222, 162, 95)"
 
     cy.get("#colorsPreset").select("tomato")
     cy.get("header").should("have.css", "background-color", "rgb(255, 99, 71)")
@@ -35,7 +37,7 @@ describe("Playground", function() {
     )
 
     cy.contains("Next").click()
-    cy.wait(1000)
+    cy.wait(2000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -45,7 +47,7 @@ describe("Playground", function() {
 
   it("can change, add or delete colors", function() {
     cy.contains("Next").click()
-    cy.wait(1000)
+    cy.wait(2000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -69,7 +71,7 @@ describe("Playground", function() {
     cy.get("input[name=newColorValue]").type("228b22")
     cy.get("#addColor").click()
 
-    cy.wait(1000)
+    cy.wait(2000)
     cy.contains("forest").should("be.visible")
     cy.contains("#228b22").should("be.visible")
     cy.contains("#228b22")
@@ -106,7 +108,11 @@ describe("Playground", function() {
       "background-color",
       "rgb(26, 26, 26)"
     )
-    cy.get("h3").should("have.css", "color", "rgb(255, 255, 255)")
+
+    cy.wait(2000)
+    cy.get("h3")
+      .first()
+      .should("have.css", "color", "rgb(255, 255, 255)")
     cy.get("input").should("have.css", "color", "rgb(255, 255, 255)")
     cy.get("input").should("have.css", "background-color", "rgb(0, 0, 0)")
     cy.get("select").should("have.css", "color", "rgb(255, 255, 255)")

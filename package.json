@@ -51,14 +51,13 @@
   "scripts": {
     "build": "gatsby build",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --env mode=headless",
     "develop": "gatsby develop",
     "dev": "gatsby develop -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "format-watch": "onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "start-server-and-test develop http://localhost:8000 cy:run"
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
