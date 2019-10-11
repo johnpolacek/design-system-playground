@@ -1,45 +1,68 @@
 {
   "name": "design-system-playground",
-  "version": "0.1.0",
-  "description": "Experiment with design systems by updating stateful theme data which controls typography and colors.",
-  "homepage": "https://johnpolacek.github.io/design-system-playground/",
-  "main": "src/index.js",
+  "description": "Experiment with design systems by playing with typography, colors and components to create a theme.",
+  "version": "1.0.0",
+  "author": "John Polacek",
   "dependencies": {
-    "chroma-js": "^1.3.4",
-    "json-cycle": "^1.2.0",
-    "palx": "^1.0.2",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.10",
-    "rebass": "^1.0.3",
-    "recompose": "^0.24.0"
+    "@chakra-ui/core": "^0.2.8",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "@mdx-js/react": "^1.4.5",
+    "@rebass/forms": "^4.0.6",
+    "@theme-ui/color": "^0.2.40",
+    "@theme-ui/presets": "^0.2.42",
+    "@theme-ui/prism": "^0.2.40",
+    "color-scheme": "^1.0.1",
+    "colorthief": "^2.3.0",
+    "emotion-theming": "^10.0.19",
+    "gatsby": "^2.15.19",
+    "gatsby-image": "^2.2.20",
+    "gatsby-plugin-manifest": "^2.2.18",
+    "gatsby-plugin-offline": "^3.0.8",
+    "gatsby-plugin-react-helmet": "^3.1.8",
+    "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-source-filesystem": "^2.1.25",
+    "gatsby-transformer-sharp": "^2.2.16",
+    "gsap": "^2.1.3",
+    "js-file-download": "^0.4.8",
+    "ntcjs": "^1.1.2",
+    "polished": "^3.4.1",
+    "prism-react-renderer": "^0.1.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "react-syntax-highlighter": "^11.0.2",
+    "rebass": "^4.0.6",
+    "rgb-hex": "^3.0.0",
+    "theme-ui": "^0.2.43"
+  },
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop -o",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format-watch": "onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnpolacek/design-system-playground.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "keywords": [
-    "design system",
-    "css",
-    "theming",
-    "react",
-    "ui",
-    "styled-components",
-    "presentational",
-    "components"
-  ],
-  "author": "John Polacek",
-  "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "^1.0.0"
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

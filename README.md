@@ -11,7 +11,7 @@ The basic idea:
 
 ###Work-In-Progress
 
-- Refactor to Theme UI
+- Refactor to Next.js and Theme UI
 - Use [@theme-ui/color](https://theme-ui.com/color) for shades 
 - Generate System UI Theme Object
 - Add GraphQL DB to save styles
