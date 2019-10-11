@@ -17,4 +17,3 @@ Check out these other cool projects:
 - [Components AI](https://components.ai/)
 - [ColorBox](https://www.colorbox.io/)
 - [Color Thief](https://lokeshdhakar.com/projects/color-thief/)
-

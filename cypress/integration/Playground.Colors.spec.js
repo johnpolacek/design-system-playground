@@ -2,15 +2,20 @@ describe("Playground", function() {
   beforeEach(function() {
     cy.visit("/")
     cy.get("header").should("have.css", "background-color", "rgb(65, 105, 225)")
-    cy.wait(6000)
+    cy.wait(10000)
     cy.contains("What body font do you like?").should("be.visible")
     cy.contains("Next").click()
+    cy.wait(2000)
     cy.contains("What heading font do you like?").should("be.visible")
     cy.contains("Next").click()
+    cy.wait(2000)
     cy.contains("Get a color scheme...").should("be.visible")
   })
 
   it("can set color scheme from preset, image, preset or go random", function() {
+
+    const defaultPrimaryColor = Cypress.browser.name === 'electron' ? 'rgb(222, 162, 94)' : 'rgb(222, 162, 95)'
+
     cy.get("#colorsPreset").select("tomato")
     cy.get("header").should("have.css", "background-color", "rgb(255, 99, 71)")
 
@@ -20,16 +25,17 @@ describe("Playground", function() {
     // see uploadFile in support/commands, cheeseburger.js in fixtures
     cy.uploadFile("cheeseburger.jpg", "#colorsFromImage")
     cy.get("#colorsFromImage").trigger("change")
-    cy.get("header").should("have.css", "background-color", "rgb(222, 162, 95)")
+    cy.get("header").should("have.css", "background-color", defaultPrimaryColor)
 
     cy.contains("go random").click()
     cy.get("header").should(
       "not.have.css",
       "background-color",
-      "rgb(222, 162, 95)"
+      defaultPrimaryColor
     )
 
     cy.contains("Next").click()
+    cy.wait(1000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -39,6 +45,7 @@ describe("Playground", function() {
 
   it("can change, add or delete colors", function() {
     cy.contains("Next").click()
+    cy.wait(1000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -61,6 +68,8 @@ describe("Playground", function() {
     cy.get("input[name=newColorName]").type("forest")
     cy.get("input[name=newColorValue]").type("228b22")
     cy.get("#addColor").click()
+
+    cy.wait(1000)
     cy.contains("forest").should("be.visible")
     cy.contains("#228b22").should("be.visible")
     cy.contains("#228b22")
@@ -72,8 +81,9 @@ describe("Playground", function() {
     cy.get("input[name=newColorValue]").should("have.value", "#")
 
     // delete color
-    cy.contains("×")
-      .last()
+    cy.contains("forest")
+      .parent()
+      .contains("×")
       .click()
     cy.contains("forest").should("not.be.visible")
     cy.contains("#228b22").should("not.be.visible")
