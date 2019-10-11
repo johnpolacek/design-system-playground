@@ -1,20 +1,20 @@
 # Design System Playground
 
-#### Build and experiment with front end design systems by setting layout, typography and color props
+#### Experiment with design systems by playing with typography, colors and components to create a theme.
 
 --
 
-The basic idea:
+With a [theme object](https://theme-ui.com/theme-spec) that follows the [System UI Theme Specification](https://system-ui.com/) for style values, scales, and/or design tokens, you can create [interoperable](https://jxnblk.com/blog/interoperability/) components that share common underlying style properties across projects, websites, applications, devices and other
 
-1. Adjust the design system props
-2. Generate a theme object that follows the [System UI Theme Specification](https://system-ui.com/theme/)
+---
 
-###Work-In-Progress
+#### Related Projects
 
-- Refactor to Next.js and Theme UI
-- Use [@theme-ui/color](https://theme-ui.com/color) for shades 
-- Generate System UI Theme Object
-- Add GraphQL DB to save styles
-- Add Cypress testing
-- Deploy to Now
+Check out these other cool projects:
+
+- [System UI](https://system-ui.com/)
+- [Theme UI](https://theme-ui.com/)
+- [Components AI](https://components.ai/)
+- [ColorBox](https://www.colorbox.io/)
+- [Color Thief](https://lokeshdhakar.com/projects/color-thief/)
 
