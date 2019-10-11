@@ -77,6 +77,20 @@ export default props => {
                 Netlify
               </a>
             </p>
+            <p sx={{ mb: 2 }}>
+              Another cool thing is{" "}
+              <a
+                sx={{
+                  fontWeight: 600,
+                  color: isDarkMode()
+                    ? lightness(theme.colors.primary, 0.8)
+                    : "#fff",
+                }}
+                href="https://components.ai/"
+              >
+                Components AI
+              </a>
+            </p>
           </div>
           <div sx={{ width: ["100%", "50%"], textAlign: ["left", "right"] }}>
             <p sx={{ mb: 2 }}>Built by John Polacek</p>
