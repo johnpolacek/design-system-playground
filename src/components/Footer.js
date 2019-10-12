@@ -122,6 +122,19 @@ export default props => {
                 @johnpolacek
               </a>
             </p>
+            <p sx={{ mb: 2 }}>
+              <a
+                sx={{
+                  fontWeight: 600,
+                  color: isDarkMode()
+                    ? lightness(theme.colors.primary, 0.8)
+                    : "#fff",
+                }}
+                href="https://github.com/johnpolacek/"
+              >
+                github.com/johnpolacek
+              </a>
+            </p>
           </div>
         </Flex>
       </footer>
