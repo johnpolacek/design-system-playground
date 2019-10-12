@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Design System Playground`,
-    description: `Experiment with typography, colors and components in your design system by playing with theme data.`,
+    description: `Play with typography, colors and themeable components in your design system.`,
     author: `@johnpolacek`,
   },
   plugins: [
