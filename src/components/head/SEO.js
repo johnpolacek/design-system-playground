@@ -57,11 +57,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: "johnpolacek",
+          content: "@johnpolacek",
         },
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:image`,
+          content: `https://design-system-playground.netlify.com/img/design-system-playground.png`,
         },
         {
           name: `twitter:description`,
