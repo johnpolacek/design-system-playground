@@ -20,18 +20,19 @@ export default props => {
 
   return (
     <>
-      <p sx={{ fontSize: 1, fontStyle: "italic" }}>Cards</p>
       <Flex sx={{ pb: 3 }}>
         {cardColors.map(color => (
-          <Card
-            key={color + "Card"}
-            buttonText={color}
-            image="https://placeimg.com/640/480/any"
-            imageAltText="Card Placeholder Image"
-            buttonColor={color}
-          >
-            This is a card.
-          </Card>
+          <div sx={{ width: "50%" }}>
+            <Card
+              key={color + "Card"}
+              buttonText="add to cart"
+              image="https://placeimg.com/640/480/any"
+              imageAltText="Card Placeholder Image"
+              buttonColor={color}
+            >
+              This is a card.
+            </Card>
+          </div>
         ))}
       </Flex>
     </>

@@ -4,7 +4,7 @@ import { useContext } from "react"
 import useTweenMax from "../animate/useTweenMax"
 import { NavContext } from "../context/NavContext"
 import { ThemeContext } from "../context/ThemeContext"
-import { Typography, Color, Components, Theme } from "./sections"
+import { Typography, Color, UI, Theme } from "./sections"
 
 export default props => {
   const { currSection } = useContext(NavContext)
@@ -33,7 +33,7 @@ export default props => {
         {
           FONT: <Typography />,
           COLOR: <Color />,
-          UI: <Components />,
+          UI: <UI />,
           THEME: <Theme />,
         }[currSection]
       }

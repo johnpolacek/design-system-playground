@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "John Polacek",
   "dependencies": {
-    "@chakra-ui/core": "^0.2.8",
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
     "@mdx-js/react": "^1.4.5",
@@ -35,7 +34,6 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
     "react-syntax-highlighter": "^11.0.2",
-    "rebass": "^4.0.6",
     "rgb-hex": "^3.0.0",
     "theme-ui": "^0.2.43"
   },

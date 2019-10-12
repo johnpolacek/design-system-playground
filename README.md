@@ -16,7 +16,8 @@ Check out these other cool projects:
 
 - [System UI](https://system-ui.com/)
 - [Theme UI](https://theme-ui.com/)
+- [Rebass](https://rebassjs.org/)
+- [Chakra UI](https://chakra-ui.com/)
 - [Components AI](https://components.ai/)
 - [ColorBox](https://www.colorbox.io/)
 - [Color Thief](https://lokeshdhakar.com/projects/color-thief/)
-

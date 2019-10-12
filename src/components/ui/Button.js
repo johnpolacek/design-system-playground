@@ -10,7 +10,7 @@ export default props => {
     <button
       sx={{
         bg: props.outline ? "transparent" : "primary",
-        color: props.outline || isDarkMode() ? "#000" : "#fff",
+        color: props.outline ? props.outline : isDarkMode() ? "#000" : "#fff",
         boxShadow: props.outline ? "0px 0px 0px 2px inset" : "none",
       }}
       {...props}

@@ -19,7 +19,6 @@ export default props => {
 
   return (
     <div sx={{ pb: [0, 4] }}>
-      <p sx={{ fontSize: 1, fontStyle: "italic", opacity: ".8" }}>Buttons</p>
       <div sx={{ pb: 3 }}>
         {buttonColors.map(color => (
           <Button
@@ -28,9 +27,9 @@ export default props => {
               bg: color,
               mr: 2,
               mb: 2,
-              px: [3, 4],
-              py: [2, 3],
-              fontSize: [1, 2],
+              px: [3, 4, 3, 4, 3],
+              py: [2, 3, 2, 3, 2],
+              fontSize: [1, 2, 1, 2, 1],
             }}
           >
             {color}
@@ -42,7 +41,13 @@ export default props => {
           <Button
             key={color + "OutlineButton"}
             outline={color}
-            sx={{ mr: 2, mb: 2, px: [3, 4], py: [2, 3], fontSize: [1, 2] }}
+            sx={{
+              mr: 2,
+              mb: 2,
+              px: [3, 4, 3, 4, 3],
+              py: [2, 3, 2, 3, 2],
+              fontSize: [1, 2, 1, 2, 1],
+            }}
           >
             {color}
           </Button>
