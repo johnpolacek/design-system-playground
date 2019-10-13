@@ -20,7 +20,7 @@ export default props => {
 
   return (
     <Flex sx={{ pb: 3 }}>
-      {cardColors.map(color => (
+      {cardColors.slice(0, 6).map(color => (
         <div sx={{ width: "50%" }}>
           <Card
             key={color + "Card"}
