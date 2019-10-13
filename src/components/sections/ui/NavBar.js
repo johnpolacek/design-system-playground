@@ -7,6 +7,7 @@ export default props => (
   <div sx={{ width: "100%", borderRadius: "8px", overflow: "hidden" }}>
     <button
       sx={{
+        fontSize:0,
         width: "33.33%",
         bg: "primary",
         borderRadius: 0,
@@ -18,6 +19,7 @@ export default props => (
     </button>
     <button
       sx={{
+        fontSize:0,
         width: "33.33%",
         bg: "gray",
         borderRadius: 0,
@@ -25,10 +27,11 @@ export default props => (
         borderColor: "rgba(122,122,122,.25)",
       }}
     >
-      Middle
+      Mid
     </button>
     <button
       sx={{
+        fontSize:0,
         width: "33.33%",
         bg: "gray",
         borderRadius: 0,

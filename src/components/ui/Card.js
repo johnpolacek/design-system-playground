@@ -23,7 +23,7 @@ export default props => (
     )}
     {props.children}
     {props.buttonText && (
-      <div sx={{ textAlign: "right", mt: 2, p: 3 }}>
+      <div sx={{ textAlign: "right", mt: 2, py: 3 }}>
         <Button
           sx={{
             fontSize: 1,
