@@ -2,13 +2,13 @@ describe("Playground", function() {
   beforeEach(function() {
     cy.visit("/")
     cy.get("header").should("have.css", "background-color", "rgb(65, 105, 225)")
-    cy.wait(20000)
+    cy.wait(10000)
     cy.contains("What body font do you like?").should("be.visible")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.contains("What heading font do you like?").should("be.visible")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.contains("Get a color scheme...").should("be.visible")
   })
 
@@ -37,7 +37,7 @@ describe("Playground", function() {
     )
 
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -47,7 +47,7 @@ describe("Playground", function() {
 
   it("can change, add or delete colors", function() {
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("primary").should("be.visible")
     cy.contains("secondary").should("be.visible")
@@ -71,7 +71,7 @@ describe("Playground", function() {
     cy.get("input[name=newColorValue]").type("228b22")
     cy.get("#addColor").click()
 
-    cy.wait(2000)
+    cy.wait(1000)
     cy.contains("forest").should("be.visible")
     cy.contains("#228b22").should("be.visible")
     cy.contains("#228b22")
@@ -109,7 +109,7 @@ describe("Playground", function() {
       "rgb(26, 26, 26)"
     )
 
-    cy.wait(2000)
+    cy.wait(1000)
     cy.get("h3")
       .first()
       .should("have.css", "color", "rgb(255, 255, 255)")

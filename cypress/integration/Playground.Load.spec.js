@@ -32,21 +32,21 @@ describe("Playground", function() {
     cy.contains("What body font do you like?").should("be.visible")
     cy.get("#selectWebFont").select("Arimo")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
 
     cy.contains("What heading font do you like?").should("be.visible")
     cy.get("#selectWebFont").select("Tinos")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
 
     cy.contains("Get a color scheme...").should("be.visible")
     cy.get("#colorsPreset").select("indigo")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
 
     cy.contains("Here are your colors...").should("be.visible")
     cy.contains("Next").click()
-    cy.wait(2000)
+    cy.wait(1000)
 
     cy.wait(1000)
 

@@ -4,7 +4,7 @@ describe("Playground", function() {
   })
 
   it("requires name to save theme", function() {
-    cy.wait(20000)
+    cy.wait(10000)
     cy.get("header")
       .contains("save")
       .click()
