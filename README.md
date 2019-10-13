@@ -6,7 +6,7 @@
 
 ---
 
-With a [theme object](https://theme-ui.com/theme-spec) that follows the [System UI Theme Specification](https://system-ui.com/) for style values, scales, and/or design tokens, you can create [interoperable](https://jxnblk.com/blog/interoperability/) components that share common underlying style properties across projects, websites, applications, devices and other
+With a [Theme Object](https://theme-ui.com/theme-spec) that follows the [System UI Theme Specification](https://system-ui.com/) for style values, scales, and/or design tokens, you can create [interoperable](https://jxnblk.com/blog/interoperability/) components that share common underlying style properties across projects, websites, applications, devices and other
 
 ---
 
