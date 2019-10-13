@@ -32,7 +32,7 @@ describe("Playground", function() {
   })
 
   it("can cancel save theme", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.get("header")
       .contains("save")
       .click()
@@ -45,7 +45,7 @@ describe("Playground", function() {
   })
 
   it("can suggest theme name", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.get("header")
       .contains("save")
       .click()

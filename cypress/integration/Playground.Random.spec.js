@@ -4,7 +4,7 @@ describe("Playground", function() {
   })
 
   it("can generate random theme", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.get("header h1").should(
       "have.css",
       "font-family",

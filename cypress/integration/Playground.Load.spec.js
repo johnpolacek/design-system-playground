@@ -4,7 +4,7 @@ describe("Playground", function() {
   })
 
   it("can load preset theme", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.get("header")
       .contains("load")
       .click()
@@ -28,7 +28,7 @@ describe("Playground", function() {
   })
 
   it("can save, load and delete themes", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.contains("What body font do you like?").should("be.visible")
     cy.get("#selectWebFont").select("Arimo")
     cy.contains("Next").click()
@@ -63,7 +63,7 @@ describe("Playground", function() {
       .click()
 
     cy.reload()
-    cy.wait(15000)
+    cy.wait(10000)
 
     cy.get("header")
       .contains("load")
@@ -80,7 +80,7 @@ describe("Playground", function() {
   })
 
   it("can cancel load theme", function() {
-    cy.wait(15000)
+    cy.wait(10000)
     cy.get("header")
       .contains("load")
       .click()
