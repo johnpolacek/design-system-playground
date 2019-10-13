@@ -1,6 +1,6 @@
 # Design System Playground
 
-#### Experiment with design systems by playing with typography, colors and components to create a theme.
+#### Play with typography, colors and components to generate a theme for your design system.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ca9cacda-5677-43e8-928d-c1970af41cfe/deploy-status)](https://app.netlify.com/sites/design-system-playground/deploys)
 
