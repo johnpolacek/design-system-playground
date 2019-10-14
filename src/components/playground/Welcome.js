@@ -59,7 +59,7 @@ export default props => {
             rotationX: 0,
             rotationY: 0,
             opacity: 1,
-            delay: 1 + Math.random() * 0.5,
+            delay: .5 + Math.random() * 0.5,
             immediateRender: true,
             ease: Power4.easeOut,
           })
