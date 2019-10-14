@@ -56,6 +56,9 @@ export default props => {
   return (
     <header
       sx={{
+        position: ["static", "static", "sticky"],
+        top: 0,
+        zIndex: 9999,
         display: "flex",
         flexWrap: "wrap",
         bg: "primary",

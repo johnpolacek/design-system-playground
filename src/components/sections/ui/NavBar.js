@@ -7,7 +7,7 @@ export default props => (
   <div sx={{ width: "100%", borderRadius: "8px", overflow: "hidden" }}>
     <button
       sx={{
-        fontSize:0,
+        fontSize: 0,
         width: "33.33%",
         bg: "primary",
         borderRadius: 0,
@@ -19,7 +19,7 @@ export default props => (
     </button>
     <button
       sx={{
-        fontSize:0,
+        fontSize: 0,
         width: "33.33%",
         bg: "gray",
         borderRadius: 0,
@@ -31,7 +31,7 @@ export default props => (
     </button>
     <button
       sx={{
-        fontSize:0,
+        fontSize: 0,
         width: "33.33%",
         bg: "gray",
         borderRadius: 0,

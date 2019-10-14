@@ -12,13 +12,13 @@ import { NavProvider } from "../context/NavContext"
 import { ThemeContext, ThemeProvider } from "../context/ThemeContext"
 import SEO from "../components/head/SEO"
 import GlobalCSS from "../components/head/GlobalCSS"
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga"
 
 const IndexPage = () => {
   const { theme } = useContext(ThemeContext)
-  
-  ReactGA.initialize('UA-2821890-15')
-  if (typeof window !== 'undefined') {
+
+  ReactGA.initialize("UA-2821890-15")
+  if (typeof window !== "undefined") {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
