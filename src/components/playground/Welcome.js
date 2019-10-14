@@ -24,7 +24,7 @@ export default props => {
       : {
           scale: 0.01,
           opacity: 0,
-          delay: 5,
+          delay: 4,
           ease: Power4.easeIn,
           onComplete: () => {
             setPlaygroundView(PlaygroundViews.FONT_BODY)
