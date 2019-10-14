@@ -8,6 +8,7 @@ import getCodeTheme from "../../themes/code"
 import Section from "./Section"
 import Heading from "../ui/Heading"
 import Button from "../ui/Button"
+import Link from "../ui/Link"
 
 export default props => {
   const { theme } = useContext(ThemeContext)
@@ -20,7 +21,7 @@ export default props => {
 
   return (
     <Section>
-      <div sx={{ maxWidth: "960px" }}>
+      <div sx={{ maxWidth: "1040px" }}>
         <Heading sx={{ pt: 3, mb: 1 }}>
           Your Theme Object{" "}
           <Button
@@ -42,7 +43,7 @@ export default props => {
         <p>
           The object below represents all the settings that have been applied to
           the active theme in this app. You can make adjustments to fonts and
-          colors, then use the generated theme in your projects.
+          colors, then use the generated theme in your projects. For more info, check out <Link href="https://system-ui.com/">System UI</Link> or <Link href="https://theme.com/">Theme UI</Link>.
         </p>
         <SyntaxHighlighter language="javascript" style={getCodeTheme(theme)}>
           {themeSource}
