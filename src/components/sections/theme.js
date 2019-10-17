@@ -45,7 +45,7 @@ export default props => {
           the active theme in this app. You can make adjustments to fonts and
           colors, then use the generated theme in your projects. For more info,
           check out <Link href="https://system-ui.com/">System UI</Link> or{" "}
-          <Link href="https://theme.com/">Theme UI</Link>.
+          <Link href="https://theme-ui.com/">Theme UI</Link>.
         </p>
         <SyntaxHighlighter language="javascript" style={getCodeTheme(theme)}>
           {themeSource}
