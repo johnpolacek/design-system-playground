@@ -53,6 +53,7 @@ export default props => {
                 mb: 2,
                 border: "solid 1px",
                 borderColor: "gray",
+                color: "black",
                 bg: "#fff",
               }}
             >
