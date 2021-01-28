@@ -87,8 +87,8 @@ describe("Playground", function() {
       .parent()
       .contains("×")
       .click()
-    cy.contains("forest").should("not.be.visible")
-    cy.contains("#228b22").should("not.be.visible")
+    cy.contains("forest").should("not.exist")
+    cy.contains("#228b22").should("not.exist")
   })
 
   it("can detect dark mode", function() {

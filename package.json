@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "chai-colors": "^1.0.1",
-    "cypress": "^3.4.1",
+    "cypress": "^6.3.0",
     "prettier": "^1.18.2",
     "start-server-and-test": "^1.10.5"
   },
@@ -48,14 +48,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run --env mode=headless",
+    "cypress": "cypress open",
     "develop": "gatsby develop",
     "dev": "gatsby develop -o",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "format-watch": "onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "cypress run --env mode=headless"
   },
   "repository": {
     "type": "git",

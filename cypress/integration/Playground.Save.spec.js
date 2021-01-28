@@ -41,7 +41,7 @@ describe("Playground", function() {
     cy.get("button")
       .contains("Cancel")
       .click()
-    cy.contains("Save Theme").should("not.be.visible")
+    cy.contains("Save Theme").should("not.exist")
   })
 
   it("can suggest theme name", function() {
