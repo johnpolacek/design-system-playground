@@ -88,6 +88,6 @@ describe("Playground", function() {
     cy.get("button")
       .contains("Cancel")
       .click()
-    cy.contains("Load Theme").should("not.be.visible")
+    cy.contains("Load Theme").should("not.exist")
   })
 })
