@@ -2,7 +2,7 @@
   "name": "design-system-playground",
   "description": "Experiment with design systems by playing with typography, colors and components to create a theme.",
   "version": "1.0.0",
-  "author": "John Polacek",
+  "author": "John Polacek (https://johnpolacek.com/)",
   "dependencies": {
     "@emotion/core": "^10.1.1",
     "@emotion/styled": "^10.0.27",
